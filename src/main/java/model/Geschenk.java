@@ -15,8 +15,8 @@ public class Geschenk {
 
     /* KONSTRUKTUR:
 
-       Wenn wir ein neues Geschenk-Objekt erstellen wollen,
-       brauchen wir diese 3 Infos: Kategorie, Angebot, Preis. */
+       Wenn wir ein neue Bestellung erstellen wollen,
+       brauchen wir diese 3 Infos: Geschenk, Angebot, Preis. */
 
     public Geschenk (String geschenk, String angebot, double preis) {
         this.geschenk = geschenk;
@@ -26,7 +26,7 @@ public class Geschenk {
 
     /* GETTER- UND SETTER METHODE:
 
-       Diese Methoden helfen uns, auf die privaten Daten (Katergorie, Angebot, Preis) zugreifen oder sie zu ändern.
+       Diese Methoden helfen uns, auf die privaten Daten (Geschenk, Angebot, Preis) zugreifen oder sie zu ändern.
 
        * Getter = Was steht drin?
        * Setter = Setze einen neuen Wert */
@@ -54,14 +54,14 @@ public class Geschenk {
 
        *Diese Methode gibt eine Liste mit Beispiel-Angeboten zurück (ArrayList)
 
-       *Sie kann z.B. für Tabellen (JTable) genutzt werden */
+     */
 
     public static List<Geschenk> getAlleAngebot() {
         List<Geschenk> angebot = new ArrayList<>(); // Neue Liste erstellen
 
         //Blumen-Angebote hinzufügt
-        angebot.add(new Geschenk("Blumen", "Rose", 0.50));
-        angebot.add(new Geschenk("Blumen","Sonnenblume", 1.0));
+        angebot.add(new Geschenk("Blumen", "Rose", 0.80));
+        angebot.add(new Geschenk("Blumen","Sonnenblumen", 2.0));
         angebot.add(new Geschenk("Blumen", "Hortensie", 2.0));
 
         //Accessories-Angebote hinzufügt
